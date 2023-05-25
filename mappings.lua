@@ -25,8 +25,8 @@ return {
       desc = "Move the current buffer left"
     },
     -- Close in normal mode with just 'q'
-    ["q"] = { function() require("astronvim.utils.buffer").close() end, desc = "Close buffer" },
-    ["Q"] = { function() require("astronvim.utils.buffer").close(0, true) end, desc = "Close buffer" }
+    ["q"] = { "<cmd>:q<cr>", desc = "Close buffer" },
+    ["Q"] = { "<cmd>:q!<cr>", desc = "Close buffer" }
   },
   t = {
     -- Exit insert mode in the terminal
